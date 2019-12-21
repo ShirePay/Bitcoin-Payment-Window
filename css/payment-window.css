@@ -1,0 +1,52 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+--s-loader-wrapper-bg-color: rgb(21, 43, 30);
+--s-loader-width: 20px;
+--s-loader-height: var(--s-loader-width);
+--s-loader-border-color-trans: rgba(29, 161, 242, 0.2);
+--s-loader-border-color-full: #007bff;
+}
+
+.spinning-loader {
+width: var(--s-loader-width);
+height: var(--s-loader-height);
+border: 5px solid var(--s-loader-border-color-trans);
+border-left-color: var(--s-loader-border-color-full);
+border-radius: 50%;
+background: transparent;
+animation-name: rotate-s-loader;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-timing-function: linear;
+position: relative;
+}
+
+@keyframes rotate-s-loader {
+from {
+transform: rotate(0);
+}
+to {
+transform: rotate(360deg);
+}
+}
+
+#bitcoinAddress{
+    font-size: 16pt;
+}
+
+@media screen and (max-width: 980px) {
+    #bitcoinAddress{
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #bitcoinAddress{
+        font-size: 10pt;
+        text-align: center;
+    }
+}
