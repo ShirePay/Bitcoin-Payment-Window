@@ -38,7 +38,7 @@ $(document).ready(function () {
         console.log(data);
 
         if(data == null){
-            console.log('Input is invalid, please check your settings within payment-window-post.php');
+            console.log('Input is invalid, please check your settings within config.php');
             clearInterval(interval);
             return;
         }
@@ -56,7 +56,7 @@ $(document).ready(function () {
         var paymentValid = false;
 
         if(data == null){
-            // no payment receeved or data error
+            // no payment received or data error
             $('#loading').fadeIn();
             $('#paymentWindow').fadeOut();
         }
@@ -74,7 +74,7 @@ $(document).ready(function () {
             paymentValid = true;
         }
         else{
-            // no payment recieved
+            // no payment received
         }
 
         console.log(warningMessage);
