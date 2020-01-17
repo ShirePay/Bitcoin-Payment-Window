@@ -1,5 +1,5 @@
 # Bitcoin-Payment-Window
-The complete step by step guide can be found at: https://player.vimeo.com/video/385085359
+The complete step by step guide can be found at: https://youtu.be/9PNHvr0e7sI
 
 --------------------------------------------------------------------------------------------------------------------------
 
